@@ -6,8 +6,8 @@
 # Requires: Windows PowerShell Module for Active Directory
 #######################################################################
 
-$Source_Group = "CN=A10_MixLine_SetPoint,OU='Active Directory Security Groups',DC=kdd_ntdomain,DC=com" 
-$Destination_Group = "CN=A09_MilkReception_SetPoint,OU=Industrial,DC=kdd_ntdomain,DC=com" 
+$Source_Group = "CN=A10_MixLine_SetPoint,OU='Active Directory Security Groups',DC=YourDoamin,DC=com" 
+$Destination_Group = "CN=A09_MilkReception_SetPoint,OU=Industrial,DC=YourDoamin,DC=com" 
  
 $Target = Get-ADGroupMember -Identity $Source_Group 
 foreach ($Person in $Target) { 
